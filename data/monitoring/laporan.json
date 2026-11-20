@@ -1,0 +1,149 @@
+{
+  "dibuat": "2026-11-20T15:01:08",
+  "status": "RETRAIN_DISARANKAN",
+  "alasan": [
+    "33% part mengalami drift pola pemakaian"
+  ],
+  "window_minggu": 12,
+  "performa": {
+    "n_prediksi": 144,
+    "n_minggu": 12,
+    "mae": 4.3950000000000005,
+    "wape": 20.991044776119406
+  },
+  "performa_saat_uji": {
+    "mae": 3.8068406294585295,
+    "rmse": 8.214150607310211,
+    "wape": 22.24776991241998
+  },
+  "drift_part": [
+    {
+      "part": "aki",
+      "rata_ref": 4.8125,
+      "rata_terbaru": 6.333333333333333,
+      "ks_pvalue": 0.05772793127783935,
+      "drift": false
+    },
+    {
+      "part": "ban",
+      "rata_ref": 5.830357142857143,
+      "rata_terbaru": 12.083333333333334,
+      "ks_pvalue": 7.027763141772012e-05,
+      "drift": true
+    },
+    {
+      "part": "bohlam_lampu",
+      "rata_ref": 5.991071428571429,
+      "rata_terbaru": 7.5,
+      "ks_pvalue": 0.4825321164516542,
+      "drift": false
+    },
+    {
+      "part": "busi",
+      "rata_ref": 32.125,
+      "rata_terbaru": 36.833333333333336,
+      "ks_pvalue": 0.204303034261342,
+      "drift": false
+    },
+    {
+      "part": "filter_oli",
+      "rata_ref": 18.723214285714285,
+      "rata_terbaru": 23.25,
+      "ks_pvalue": 0.0017718179207631356,
+      "drift": true
+    },
+    {
+      "part": "filter_udara",
+      "rata_ref": 6.116071428571429,
+      "rata_terbaru": 7.5,
+      "ks_pvalue": 0.33023076978434035,
+      "drift": false
+    },
+    {
+      "part": "kampas_rem",
+      "rata_ref": 12.973214285714286,
+      "rata_terbaru": 17.666666666666668,
+      "ks_pvalue": 0.0020719207665298232,
+      "drift": true
+    },
+    {
+      "part": "minyak_rem",
+      "rata_ref": 2.7142857142857144,
+      "rata_terbaru": 3.4166666666666665,
+      "ks_pvalue": 0.4981653762784977,
+      "drift": false
+    },
+    {
+      "part": "oli_mesin",
+      "rata_ref": 106.22321428571429,
+      "rata_terbaru": 132.83333333333334,
+      "ks_pvalue": 0.002416460611229219,
+      "drift": true
+    },
+    {
+      "part": "rantai_gear",
+      "rata_ref": 0.7142857142857143,
+      "rata_terbaru": 1.75,
+      "ks_pvalue": 0.1496340382666505,
+      "drift": false
+    },
+    {
+      "part": "v_belt",
+      "rata_ref": 1.4375,
+      "rata_terbaru": 1.5,
+      "ks_pvalue": 0.9999999846690235,
+      "drift": false
+    },
+    {
+      "part": "wiper",
+      "rata_ref": 0.48214285714285715,
+      "rata_terbaru": 0.5833333333333334,
+      "ks_pvalue": 0.39470607922154094,
+      "drift": false
+    }
+  ],
+  "drift_kendaraan": [
+    {
+      "jenis_kendaraan": "mobil_city",
+      "porsi_ref": 0.19026510953882875,
+      "porsi_terbaru": 0.17213663764233086,
+      "jenis_baru": false,
+      "drift": false
+    },
+    {
+      "jenis_kendaraan": "mobil_hybrid",
+      "porsi_ref": 0.03307475918506521,
+      "porsi_terbaru": 0.10984594775619558,
+      "jenis_baru": false,
+      "drift": true
+    },
+    {
+      "jenis_kendaraan": "mobil_listrik",
+      "porsi_ref": 0.004517943909300145,
+      "porsi_terbaru": 0.055592766242464835,
+      "jenis_baru": false,
+      "drift": true
+    },
+    {
+      "jenis_kendaraan": "motor_bebek",
+      "porsi_ref": 0.23962151564231524,
+      "porsi_terbaru": 0.2116543871399866,
+      "jenis_baru": false,
+      "drift": false
+    },
+    {
+      "jenis_kendaraan": "motor_matic",
+      "porsi_ref": 0.43167675389992327,
+      "porsi_terbaru": 0.362357669122572,
+      "jenis_baru": false,
+      "drift": true
+    },
+    {
+      "jenis_kendaraan": "motor_sport",
+      "porsi_ref": 0.10084391782456739,
+      "porsi_terbaru": 0.0884125920964501,
+      "jenis_baru": false,
+      "drift": false
+    }
+  ]
+}

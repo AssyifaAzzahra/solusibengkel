@@ -63,3 +63,21 @@ def riwayat(part: str, n: int = 26):
         {"minggu": r["minggu"].strftime("%Y-%m-%d"), "jumlah": int(r["jumlah"])}
         for _, r in df.iterrows()
     ]
+
+
+@app.get("/monitoring")
+def monitoring():
+    import json
+
+    import pandas as pd
+
+    folder = predict.ROOT / "data" / "monitoring"
+    f_laporan = folder / "laporan.json"
+    if not f_laporan.exists():
+        raise HTTPException(404, "Laporan belum ada. Jalankan python src/monitor.py --backfill 12")
+    laporan = json.loads(f_laporan.read_text())
+    f_minggu = folder / "per_minggu.csv"
+    laporan["per_minggu"] = (
+        pd.read_csv(f_minggu).to_dict(orient="records") if f_minggu.exists() else []
+    )
+    return laporan

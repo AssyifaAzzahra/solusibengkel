@@ -35,3 +35,11 @@ def test_riwayat_part_tidak_ada(monkeypatch):
         }),
     )
     assert client.get("/riwayat/tidak_ada").status_code == 404
+
+
+
+
+
+def test_monitoring_laporan_belum_ada(monkeypatch, tmp_path):
+    monkeypatch.setattr(predict, "ROOT", tmp_path)
+    assert client.get("/monitoring").status_code == 404
