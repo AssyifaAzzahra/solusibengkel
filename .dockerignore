@@ -1,0 +1,8 @@
+venv/
+.git/
+__pycache__/
+mlruns/
+mlartifacts/
+mlflow.db
+data/
+models/

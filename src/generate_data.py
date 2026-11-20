@@ -83,8 +83,8 @@ def faktor_hari(tanggal: pd.Timestamp) -> float:
     hari_ke = (tanggal - pd.Timestamp(START)).days
     f *= 1 + 0.0004 * hari_ke
     # lonjakan sebelum Lebaran
-    for l in LEBARAN:
-        selisih = (l - tanggal).days
+    for lb in LEBARAN:
+        selisih = (lb - tanggal).days
         if 0 <= selisih <= 14:
             f *= 1.6
     return f
