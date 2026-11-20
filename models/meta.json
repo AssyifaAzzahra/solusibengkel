@@ -1,0 +1,42 @@
+{
+  "nama_model": "gb_150_lr005",
+  "dilatih_pada": "2026-11-20T14:34:46",
+  "fitur": [
+    "lag_1",
+    "lag_2",
+    "lag_3",
+    "lag_4",
+    "rata4",
+    "rata8",
+    "std4",
+    "minggu_ke",
+    "bulan",
+    "musim_hujan",
+    "part_id"
+  ],
+  "peta_part": {
+    "aki": 0,
+    "ban": 1,
+    "bohlam_lampu": 2,
+    "busi": 3,
+    "filter_oli": 4,
+    "filter_udara": 5,
+    "kampas_rem": 6,
+    "minyak_rem": 7,
+    "oli_mesin": 8,
+    "rantai_gear": 9,
+    "v_belt": 10,
+    "wiper": 11
+  },
+  "metrik_uji": {
+    "mae": 3.8068406294585295,
+    "rmse": 8.214150607310211,
+    "wape": 22.24776991241998
+  },
+  "metrik_baseline": {
+    "mae": 4.119791666666667,
+    "rmse": 8.136130197049045,
+    "wape": 24.076704545454543
+  },
+  "minggu_latih_terakhir": "2025-09-29"
+}
